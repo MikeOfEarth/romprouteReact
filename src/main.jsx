@@ -4,16 +4,21 @@ import App from './App.jsx'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter } from 'react-router-dom'
 import UserProvider from './contexts/UserContext.jsx';
+import QueryProvider from './contexts/QueryContext.jsx'
+import APIProvider from './contexts/APIContext.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <App />
+        <QueryProvider>
+          <APIProvider>
+            <App />
+          </APIProvider>
+        </QueryProvider>
       </UserProvider>
     </BrowserRouter>
-  </React.StrictMode>,
 )

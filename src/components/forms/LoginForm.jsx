@@ -43,15 +43,15 @@ export default function HomeLoginForm() {
 
             if(data.token){
                 const userData = await getUser(user.username)
-                console.log(data.token)
                 
+                toast.success(user.username.concat(' logged in!'))
                 updateUser({ username: user.username, token: data.token })
-                console.log(user.token)
                 
-                navigate('/home')
+                navigate('/router')
                 return
             }
         }
+        toast.error('Invalid User Info/ Try Again')
         console.error("Login failed")
         setIsLogging(false)
     }

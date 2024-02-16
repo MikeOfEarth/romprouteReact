@@ -1,4 +1,6 @@
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @font-face {
@@ -39,6 +41,16 @@
   padding-left: 3%;
 }
 
+#textStack2{
+  position: absolute;
+  padding-top: 3%;
+  padding-left: 3%;
+  z-index: -1;
+  background-color: #000000;
+}
+
+
+
 #mainText{
   font-family: Direction;
   font-size: 360px;
@@ -76,7 +88,7 @@
 
 #login-form>input{
   color: white;
-  background-color: #000000;
+  background-color: rgb(14, 13, 13);
   width: 100%;
   padding:4px;
   padding-left: 8px;
@@ -174,3 +186,366 @@
   color:white
 }
 /* LANDING PAGE END---------------- */
+/* HEADER COMP START */
+
+#headerBar{
+  background: linear-gradient(to right, black,#0e0d0d,black);
+  justify-content: space-between;
+  height: 70px;
+}
+
+#logoSide{
+  margin-left:8%;
+}
+
+#menuCluster{
+  color:white ;
+  margin-right:8%;
+  justify-content: flex-end;
+  font-size: 180%;
+  gap: 10%
+}
+
+#menuCluster>*:hover{
+  color:#fbc46b;
+  text-shadow: 0px 0px 10px #fbc46b;
+}
+
+#menuCluster>*{
+  text-decoration: none;
+  color: white;
+}
+
+#conditionalHeaderLogin{
+  
+  font-size: 80%;
+  text-decoration: none;
+  color: rgb(193, 255, 249);
+  border: 1px solid rgb(193, 255, 249);
+  padding: 0px 8px;
+  margin-right: -10%;
+  border-radius: .25em;
+
+}
+
+#conditionalHeaderLogin:hover{
+  color:#fbc46b;
+  border: 1px solid #fbc46b;
+}
+
+#profilePic{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+#proPic{
+  border-radius: 5px;
+  margin-bottom: 3px;
+  box-shadow: 0px 0px 10px 0px rgb(193, 255, 249);
+}
+
+#headerNameIdentifier{
+  color:white;
+  text-align: right;
+  line-height: 20%;
+  font-size: medium;
+  margin-top: 0px;
+  width: fit-content;
+  max-width: 155px;
+  height: 45px;
+  
+}
+
+#headerUsername{
+  font-size: 120%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
+}
+
+/* HEADER COMP END---------------- */
+/* BODY START */
+
+
+.posts{
+  margin-left: -0px;
+  padding:50px;
+  min-width: 100%;
+  background-color: #000000;
+  color: white;
+}
+
+.singlepost{
+  position: relative;
+  box-shadow: 0px 0px 15px 0px rgb(193, 255, 249);
+  padding:20px;
+  margin-bottom:20px;
+  min-height: 450px;
+  border-radius: 10px;
+
+}
+.singlepost>*{
+  padding-left:10%;
+
+}
+.singlepost>*>h4{
+  padding-top: 10%
+}
+
+.singlepost>*>img{
+  position: absolute;
+  top:6%;
+  right:10%;
+}
+
+#body{
+  margin: 0px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.526);
+  color: white;
+  height:858px;
+  min-width: 100%;
+  box-shadow: inset 0px 0px 15px 0px rgb(193, 255, 249);
+}
+
+#underlay{
+  position: absolute;
+  background-color: #0b0b0b;
+  min-height: 858px;
+  min-width: 100%;
+  margin-bottom: -5px;
+  padding: 0px;
+
+}
+
+#bodyImage{
+  position: absolute;
+  height: 75%;  
+  background-color: #0b0b0b;
+  bottom: 0;
+  right:0;
+
+  
+}
+/* BODY END---------------- */
+/* PLACE QUERY START */
+
+#stack{
+  width: 100%;
+  padding-right:5%;
+}
+
+.placeQueryBox{
+  display:flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px white solid;
+  text-align: center;
+  overflow-wrap:normal
+}
+
+.placeDeleteButton{
+  width: 150px;
+  align-self: center;
+  margin-bottom: 5%;
+}
+
+
+
+.inputTime{
+  text-align: center;
+}
+/* PLACE QUERY END---------------- */
+/* PLACE LIST QUERY BOX START */
+#querySidebar{
+  width: 13%;
+  min-width: 225px;
+  height: 100%;
+  min-height: 400px;
+  margin-top: 5%;
+  height: 75%;
+  border: 1px solid white;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 0px rgb(193, 255, 249);
+  padding: 10px;
+  text-align: center;
+
+}
+
+#queryButtonStack{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+#queryButtonStack>*{ 
+  height: 5%;
+}
+
+#locationPlot{
+  position: absolute;
+  top: 5%;
+  left:25%;
+  scale:120%
+}
+#queryContainer{
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  height: 100%;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.5%;
+}
+
+#queryContainer>p{
+  align-self: center;
+  justify-self: center;
+}
+
+.placeQueryBox{
+  border: 1px white solid;
+  min-height:400px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #050505a8;
+  border-radius: 5%;
+  box-shadow: 0px 0px 10px 0px rgb(193, 255, 249);
+  transform: scale(100%);
+  box-sizing: border-box;
+}
+
+.placeQueryBox>*{
+  padding:3%;
+  padding-right: 25px;
+}
+
+.queryButtonContainer{
+  scale: 95%;
+}
+
+#querySubmitDelete{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom:23%;
+  left:44.5%;
+  height:9%;
+  width: 25%;
+  gap:5%;
+}
+
+#querySubmitDelete>*{
+  font-weight: bold;
+  font-size: 115%;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0 0 5px 1px white
+}
+
+#emptyPostReturn{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#registerForm{
+  position: absolute;
+  right: 20%;
+  top: 11%;
+  width: 270px;
+  background-color: rgba(47, 47, 47, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(193, 255, 249);
+  }
+
+
+.formatInput{
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(14, 13, 13);
+  width: 100%;
+  padding:4px;
+  padding-left: 8px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  border-radius: .3rem;
+  border: 0;
+}
+
+#registerForm>h3{
+  color: white;
+  font-size: 190%;
+  padding: 4px;
+  padding-top: 10px;
+  padding-right:4px
+}
+
+#regSubmit{
+  background-color: #551f90;
+  border: 1px solid rgb(193, 255, 249);
+  color: white;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 125%;
+  border-radius: .35em;
+}
+
+#regSubmit:hover{
+  background-color: rgb(193, 255, 249);
+  border: 1px solid  rgb(3, 29, 26);
+  color: rgb(3, 29, 26);
+}
+
+#postSidebar{
+  max-width:500px;
+}
+/* PLACE LIST QUERY BOX START END---------------- */
+/* PLACE CARD START */
+
+#boxSpin{
+  padding-left: 100px;
+}
+
+#placeTitle{
+  font-size: 200%;
+}
+
+.bottomInfo{
+  font-size: 110%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(193, 255, 249);
+  line-height: 1;
+}
+
+.shuffleButt{
+  font-size: 150%;
+  margin-top: 15px;
+  margin-left: 10%
+}
+
+.placePost{
+  margin-top: 15px;
+}
+
+.spotPhoto{
+  margin:0px;
+  padding: 0px;
+}

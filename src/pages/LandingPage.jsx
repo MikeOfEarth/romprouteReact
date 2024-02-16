@@ -14,10 +14,10 @@ export default function LandingPage() {
             <h2>Skip the planning on your next...</h2>
             <Container id="rollControl">
               <ul id="rollingList">
+                <li className="rollingItem">Night Out</li>
                 <li className="rollingItem">Pub Crawl</li>
-                <li className="rollingItem">Date Night</li>
+                <li className="rollingItem">Blind Date</li>
                 <li className="rollingItem">Club Hopping</li>
-                <li className="rollingItem">Girls Night Out</li>
               </ul>
             </Container>
             <Container id="landingUnderText">
