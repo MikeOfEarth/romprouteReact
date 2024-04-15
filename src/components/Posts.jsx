@@ -7,10 +7,10 @@ export const Posts = () => {
 
     useState( () => {
         (async ()=>{
-            const res = await fetch('http://127.0.0.1:5000/post/')
+            const res = await fetch('https://romp-router-backend.onrender.com/post/')
             if(res.ok){
                 const data = await res.json()
-                setPosts(data);
+                setPosts(data.reverse());
                 return
             }
             console.error('failed to get posts')

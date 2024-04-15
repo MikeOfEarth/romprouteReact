@@ -32,22 +32,25 @@ export default function PostSidebar() {
     console.log(postPlaces)
     console.log(activeUser)
     
-    
-    const res = await fetch('http://127.0.0.1:5000/post/',{
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${activeUser.token}`
-        },
-        body: JSON.stringify({places_list: postPlaces})
-    })
-    if(res.ok){
-        const data = await res.json()
-        console.log(data);
-        toast.success('Post created!')
-        navigate('/home')
+    if (postPlaces.length>0){
+      const res = await fetch('https://romp-router-backend.onrender.com/post/',{
+          method: "POST",
+          headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${activeUser.token}`
+          },
+          body: JSON.stringify({places_list: postPlaces})
+      })
+      if(res.ok){
+          const data = await res.json()
+          console.log(data);
+          toast.success('Post created!')
+          navigate('/home')
+      }
+      console.error('Post failed')
+    } else {
+      toast.error('No places locked in')
     }
-    console.error('Post failed')
   }
 
   
