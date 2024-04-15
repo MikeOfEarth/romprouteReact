@@ -15,7 +15,7 @@ export default function Header() {
         <NavbarBrand as={NavLink} to='/' id="logo">
           <img
           alt=""
-          src="src\assets\logo.png"
+          src="https://i.imgur.com/WtiDITL.png"
           width="85"
           height="45"
           className="d-inline-block align-top"
@@ -50,7 +50,7 @@ export default function Header() {
             <>
               <img id="proPic"
               alt=""
-              src="src\assets\defaultprofile.png"
+              src="https://i.imgur.com/Y3dJG7O.png"
               width="45"
               height="45"
               className="d-inline-block align-top"

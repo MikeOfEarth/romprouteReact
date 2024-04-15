@@ -14,7 +14,7 @@ export default function EmailForm() {
 
   
   async function sendEmail(e){
-    toast.success('Email Sent from'+fromName+' to '+toName)
+    toast.error('We are sorry for the inconvience, the send function is currently being fixed.')
     e.preventDefault()
     let messageString=''
     let from=fromName
@@ -27,28 +27,28 @@ export default function EmailForm() {
         console.log(messageString)         
     }
 
-    const datas={
-        service_id: EJserve,
-        template_id:"template_h785efe",
-        user_id: 'VcIctpprWxL8gWztE',
-        template_params: {
-            from_name: from,
-            to_name: to,
-            message: messageString,
-            to_email: email
-        }
+//     const datas={
+//         service_id: EJserve,
+//         template_id:TemplateName,
+//         user_id: KEY,
+//         template_params: {
+//             from_name: from,
+//             to_name: to,
+//             message: messageString,
+//             to_email: email
+//         }
+//     }
+//     const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+//         type: 'POST',
+//         data: JSON.stringify(datas),
+//         contentType: 'application/json'
+//     })
+//     if (res.ok){
+//         console.log('message sent')
+//         return
+//     }
+//     console.log('errror again')  
     }
-    const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        type: 'POST',
-        data: JSON.stringify(datas),
-        contentType: 'application/json'
-    })
-    if (res.ok){
-        console.log('message sent')
-        return
-    }
-    console.log('errror again')  
-  }
 
   return (
     <div>

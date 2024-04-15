@@ -5,9 +5,9 @@
 
 @font-face {
   font-family: 'Direction';
-  src: local('Direction') url('./assets/fonts/Direction.woff2') format('woff2'),
-    url('./assets/fonts/Direction.woff') format('woff'),
-    url('./assets/fonts/Direction.ttf') format('truetype');
+  src: local('Direction') url('https://mega.nz/file/Fe1AHZKR#bsM_ULgPDZf7JhxRBib6aGe9p8umjrH-N4MiJw0HSiQ') format('woff2'),
+    url('https://mega.nz/file/kKsFRAbA#A1Ewl-p4cmbp7GxIalF3lA7-PkrFT8uR17cM0cGDmzU') format('woff'),
+    url('https://mega.nz/file/RHEgwChB#EN6dJcu9kzpgQQYGyBdrTqhuJYoiLZ1SCwZCWmMM0v8') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 
 /* LANDING PAGE START---------------- */
 #landingPage {
-  background:url("./assets/homepagefullshift.png"),black;
+  background:url("https://i.imgur.com/ABeiI4m.png"),black;
   min-height: 1100px;
   position: relative;
   background-attachment: fixed;
@@ -54,7 +54,7 @@
 #mainText{
   font-family: Direction;
   font-size: 360px;
-  background:url("./assets/homepagefullshift.png");
+  background:url("https://i.imgur.com/ABeiI4m.png");
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-text-stroke: 5px rgb(193, 255, 249);

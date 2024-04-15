@@ -14,7 +14,7 @@ export default function RouterPage() {
   return (
     <>  
       <Header/>
-      <Body imgTag='src\assets\block2.png' qSidebar={true} pSidebar={false}>
+      <Body imgTag='https://i.imgur.com/6yXA64l.png' qSidebar={true} pSidebar={false}>
         <QueryContainer> 
         </QueryContainer>
       </Body>

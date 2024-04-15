@@ -12,7 +12,7 @@ export default function PostPage() {
   return (
     <>  
       <Header/>
-      <Body imgTag='src\assets\block3.png' qSidebar={false} pSidebar={true}>
+      <Body imgTag='https://i.imgur.com/F35A8Xq.png' qSidebar={false} pSidebar={true}>
         <QueryContainer> 
         </QueryContainer>
       </Body>
